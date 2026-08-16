@@ -1,4 +1,4 @@
-import { Eye, Glasses, Star, UserRoundSearch } from "@/assets/icons"
+import { Archive, Eye, FileUser, Glasses, ShieldUser, Star, UserRoundSearch } from "@/assets/icons"
 import type { LucideIcon } from "lucide-react"
 
 interface ExpertiseCardData {
@@ -33,4 +33,26 @@ export const expertiseData: ExpertiseCardData[] = [
         description: "Specialized fitting services for all types of contact lenses, including daily and monthly wear.",
         icon: UserRoundSearch
     }
+]
+
+export const whyCambridgeData: ExpertiseCardData[] = [
+    {
+        key: 1,
+        title: "advanced diagnostics",
+        description: "We use the lates AI-driven dianostic tools to map your vision with micrsoscopic precision.",
+        icon: FileUser,
+    },
+    {
+        key: 2,
+        title: "qualified optometrists",
+        description: "Our team is globally certified and commited to continous medical education.",
+        icon: ShieldUser,
+    },
+    {
+        key: 3,
+        title: "wide eyewear selection",
+        description: "From independent artisan crafters to global fashion powerhouses, we curate only the best.",
+        icon: Archive,
+    },
+
 ]

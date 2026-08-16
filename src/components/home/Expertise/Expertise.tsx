@@ -4,7 +4,7 @@ import SolutionCard from "./SolutionCard";
 
 const Expertise = () => {
     return (
-        <SectionWrapper maxHeight="max-h-[751px]">
+        <SectionWrapper>
             <section className="space-y-4 xl:space-y-8">
                 <p
                     className="tracking-widest uppercase text-xs font-plus-jakarta-sans font-bold text-[teal]">

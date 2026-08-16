@@ -1,1 +1,9 @@
-export { Eye, Glasses, Star, UserRoundSearch } from "lucide-react";
+export {
+    Eye,
+    Glasses,
+    Star,
+    UserRoundSearch,
+    Archive,
+    FileUser,
+    ShieldUser,
+} from "lucide-react";
