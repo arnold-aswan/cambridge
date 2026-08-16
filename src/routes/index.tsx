@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import HeroSection from '../components/shared/hero/HeroSection'
 import Expertise from '#/components/home/Expertise/Expertise'
+import CuratedSection from '#/components/home/CuratedSection/CuratedSection'
 
 export const Route = createFileRoute('/')({ component: App })
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <HeroSection />
       <Expertise />
+      <CuratedSection />
       {/* <main className="page-wraps px-4 pb-8 pt-14">
         <section className="island-shell rise-in relative overflow-hidden rounded-[2rem] px-6 py-10 sm:px-10 sm:py-14">
           <div className="pointer-events-none absolute -left-20 -top-24 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(79,184,178,0.32),transparent_66%)]" />

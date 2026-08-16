@@ -265,6 +265,12 @@ body {
   }
 }
 
+@layer utilities {
+  .center {
+    @apply flex items-center justify-center
+  }
+}
+
 .font-sans {
   font-family: var(--font-sans);
 }
