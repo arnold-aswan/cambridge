@@ -64,7 +64,7 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 
-  --teal: #008080;
+  --teal: #006A6A;
   --blue-primary: #1A2B4B;
   --dark-blue: #031635;
   --gray-tertiary: #333333;
@@ -172,7 +172,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --teal: #008080;
+  --teal: #006A6A;
   --blue-primary: #1A2B4B;
   --dark-blue: #031635;
   --gray-tertiary: #333333;
