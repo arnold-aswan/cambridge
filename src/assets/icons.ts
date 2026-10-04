@@ -13,4 +13,7 @@ export {
     Award,
     CheckCircle2,
     Scan,
+    Stethoscope,
+    ShieldCheck,
+    Clock
 } from "lucide-react";
