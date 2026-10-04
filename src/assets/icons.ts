@@ -6,4 +6,11 @@ export {
     Archive,
     FileUser,
     ShieldUser,
+    Activity,
+    Microscope,
+    Sparkles,
+    ArrowRight,
+    Award,
+    CheckCircle2,
+    Scan,
 } from "lucide-react";

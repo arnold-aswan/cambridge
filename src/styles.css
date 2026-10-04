@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
@@ -7,62 +7,64 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --sea-ink: #173a40;
-  --sea-ink-soft: #416166;
-  --lagoon: #4fb8b2;
-  --lagoon-deep: #328f97;
-  --palm: #2f6a4a;
-  --sand: #e7f0e8;
-  --foam: #f3faf5;
-  --surface: rgba(255, 255, 255, 0.74);
-  --surface-strong: rgba(255, 255, 255, 0.9);
-  --line: rgba(23, 58, 64, 0.14);
-  --inset-glint: rgba(255, 255, 255, 0.82);
-  --kicker: rgba(47, 106, 74, 0.9);
-  --bg-base: #e7f3ec;
-  --header-bg: rgb(255, 255, 255);
-  --chip-bg: rgba(255, 255, 255, 0.8);
-  --chip-line: rgba(47, 106, 74, 0.18);
-  --link-bg-hover: rgba(255, 255, 255, 0.9);
-  --hero-a: rgba(79, 184, 178, 0.36);
-  --hero-b: rgba(47, 106, 74, 0.2);
+  /* Stitch Design System: The Clinical Curator */
+  --stitch-primary: #031635;
+  --stitch-primary-container: #1a2b4b;
+  --stitch-secondary: #006a6a;
+  --stitch-secondary-container: #90efef;
+  --stitch-surface: #fbf9f8;
+  --stitch-surface-container-low: #f5f3f3;
+  --stitch-surface-container-lowest: #ffffff;
+  --stitch-surface-container-high: #e9e8e7;
+  --stitch-surface-container-highest: #e4e2e2;
+  --stitch-on-surface: #1b1c1c;
+  --stitch-error: #ba1a1a;
+  --stitch-error-container: #ffdad6;
 
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
+  --sea-ink: #1b1c1c;
+  --sea-ink-soft: #44474e;
+  --lagoon: #006a6a;
+  --lagoon-deep: #004f4f;
+  --palm: #1a2b4b;
+  --sand: #f5f3f3;
+  --foam: #fbf9f8;
+  --surface: rgba(251, 249, 248, 0.75);
+  --surface-strong: rgba(255, 255, 255, 0.95);
+  --line: rgba(27, 28, 28, 0.08);
+  --inset-glint: rgba(255, 255, 255, 0.82);
+  --kicker: rgba(0, 106, 106, 0.9);
+  --bg-base: #fbf9f8;
+  --header-bg: rgba(251, 249, 248, 0.85);
+  --chip-bg: #e9e8e7;
+  --chip-line: rgba(0, 106, 106, 0.18);
+  --link-bg-hover: rgba(255, 255, 255, 0.9);
+  --hero-a: rgba(0, 106, 106, 0.15);
+  --hero-b: rgba(26, 43, 75, 0.12);
+
+  --background: oklch(0.985 0.002 80);
+  --foreground: oklch(0.15 0.005 285);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.141 0.005 285.823);
+  --card-foreground: oklch(0.15 0.005 285);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.21 0.006 285.885);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.21 0.006 285.885);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.871 0.006 286.286);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-primary: oklch(0.21 0.006 285.885);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.871 0.006 286.286);
+  --popover-foreground: oklch(0.15 0.005 285);
+  --primary: #031635;
+  --primary-foreground: #ffffff;
+  --secondary: #006a6a;
+  --secondary-foreground: #ffffff;
+  --muted: #e9e8e7;
+  --muted-foreground: #44474e;
+  --accent: #90efef;
+  --accent-foreground: #002020;
+  --destructive: #ba1a1a;
+  --destructive-foreground: #ffffff;
+  --border: rgba(197, 198, 207, 0.4);
+  --input: rgba(197, 198, 207, 0.4);
+  --ring: #006a6a;
+  --radius: 0.5rem;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-accent: "Playfair Display", serif;
 
   --teal: #006A6A;
   --blue-primary: #1A2B4B;
@@ -70,6 +72,7 @@
   --gray-tertiary: #333333;
   --gray-neutral: #606060;
 }
+
 
 .dark {
   --sea-ink: #d7ece8;
@@ -135,6 +138,7 @@
 @theme inline {
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-heading: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-accent: 'Playfair Display', Georgia, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -299,4 +303,28 @@ body {
 .font-inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+/* Stitch Design System: The Clinical Curator Utilities */
+.glass-lens {
+  background: rgba(251, 249, 248, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.radial-clinical-hero {
+  background: radial-gradient(circle at top left, var(--stitch-primary), var(--stitch-primary-container));
+}
+
+.surface-card {
+  background-color: var(--stitch-surface-container-lowest);
+}
+
+.surface-nested {
+  background-color: var(--stitch-surface-container-low);
 }
