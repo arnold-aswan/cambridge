@@ -1,73 +1,60 @@
-import SectionWrapper from "#/components/shared/SectionWrapper"
-import { Cpu, ShieldCheck } from "lucide-react"
-
-const techEquipment = [
+const diagnosticItems = [
   {
-    name: "Zeiss Cirrus HD-OCT 5000",
-    category: "Spectral-Domain Retinal Scanner",
-    description: "Captures 68,000 A-scans per second for sub-micron visualization of retinal layers and optic nerve fibers."
+    num: "01",
+    title: "OCT Retinal Imaging",
+    description: "Cross-sectional retinal analysis for early detection of glaucoma and macular degeneration."
   },
   {
-    name: "Oculus Keratograph 5M",
-    category: "Corneal Topographer & Meibographer",
-    description: "Evaluates tear film stability, non-invasive tear break-up time (NIKBUT), and infrared gland atrophy mapping."
+    num: "02",
+    title: "Corneal Topography",
+    description: "Precise 3D mapping of the eye's surface for custom lens fitting and keratoconus tracking."
   },
   {
-    name: "Lumenis M22 OptiLight IPL",
-    category: "Ocular Surface Light Therapy",
-    description: "FDA-cleared intense pulsed light therapy engineered specifically to treat meibomian gland dysfunction and dry eye."
-  },
-  {
-    name: "Nidek Wavefront Aberrometer",
-    category: "Digital Objective Refractor",
-    description: "Maps higher-order optical aberrations to craft zero-distortion digital wavefront progressive lenses."
+    num: "03",
+    title: "Visual Field Analysis",
+    description: "Automated perimetry to map the peripheral and central visual function with surgical accuracy."
   }
 ]
 
 const TechSuite = () => {
   return (
-    <SectionWrapper bg="bg-[#031635]">
-      <div className="text-white space-y-12">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <div className="space-y-3 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#90EFEF]/10 border border-[#90EFEF]/20 text-[#90EFEF] text-xs font-bold font-plus-jakarta-sans tracking-widest uppercase">
-              <Cpu className="size-4" />
-              <span>Next-Gen Diagnostic Suite</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold font-plus-jakarta-sans leading-tight">
-              Hospital-Grade Diagnostic Technology
-            </h2>
-            <p className="text-white/80 text-base">
-              We invest in world-leading diagnostic devices to detect ocular changes early and deliver unprecedented optical accuracy.
-            </p>
-          </div>
+    <section className="overflow-hidden">
+      <div className="flex flex-col lg:flex-row">
+        {/* Left: Dark editorial panel */}
+        <div className="lg:w-1/2 bg-[#031635] px-10 py-20 md:px-16 md:py-24 flex flex-col justify-center text-white">
+          <span className="text-[#006A6A] tracking-[0.3em] font-bold text-xs uppercase mb-8 font-plus-jakarta-sans">
+            The Diagnostic Suite
+          </span>
+          <h2 className="text-4xl sm:text-5xl font-plus-jakarta-sans font-bold mb-12 leading-tight">
+            Advanced Optical <br />Engineering.
+          </h2>
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 text-xs font-semibold">
-            <ShieldCheck className="size-4 text-[#90EFEF]" />
-            <span>FDA & CE Medical Device Certified</span>
+          <div className="space-y-10">
+            {diagnosticItems.map((item) => (
+              <div key={item.num} className="flex gap-6">
+                <span className="text-[#006A6A] font-plus-jakarta-sans font-bold text-2xl shrink-0 leading-none pt-1">
+                  {item.num}
+                </span>
+                <div className="space-y-1.5">
+                  <h5 className="text-xl font-bold font-plus-jakarta-sans">{item.title}</h5>
+                  <p className="text-[#8293B8] text-sm leading-relaxed">{item.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {techEquipment.map((tech) => (
-            <div
-              key={tech.name}
-              className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-3 hover:border-[#90EFEF]/40 transition-colors"
-            >
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#90EFEF]">
-                {tech.category}
-              </span>
-              <h3 className="text-lg font-bold font-plus-jakarta-sans text-white">
-                {tech.name}
-              </h3>
-              <p className="text-xs text-white/70 leading-relaxed">
-                {tech.description}
-              </p>
-            </div>
-          ))}
+        {/* Right: Full-height image */}
+        <div className="lg:w-1/2 relative min-h-105 lg:min-h-0">
+          <img
+            src="/images/oct_scanner.png"
+            alt="High-tech OCT scanner in a dark medical environment"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#031635]/10" />
         </div>
       </div>
-    </SectionWrapper>
+    </section>
   )
 }
 

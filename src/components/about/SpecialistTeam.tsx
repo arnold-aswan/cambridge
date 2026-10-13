@@ -1,50 +1,40 @@
 import SectionWrapper from "@/components/shared/SectionWrapper"
-import { Award, CheckCircle2 } from "@/assets/icons"
+import { CheckCircle2 } from "@/assets/icons"
 
 const teamMembers = [
   {
-    name: "Dr. Alistair Finch, OD",
-    role: "Lead Doctor of Optometry",
-    specialty: "Retinal Diagnostics & Cornea Specialist",
-    bio: "Over 20 years of clinical practice specializing in advanced OCT imaging, glaucoma management, and post-surgical co-management.",
+    name: "Dr. Amara Okoro",
+    role: "Lead Optometrist",
+    specialty: "BSc (Hons) MCOptom",
+    bio: "Specializing in pediatric optometry and advanced contact lens therapeutics with over a decade of clinical excellence.",
     image: "/images/optometrist_doctor.png"
   },
   {
-    name: "Elena Rostova",
-    role: "Master Ophthalmic Stylist",
-    specialty: "Luxury Eyewear Curation & Facial Metrics",
-    bio: "Trained in Milan and Paris, Elena specializes in matching facial geometry and personal style with rare, independent designer frames.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+    name: "Dr. Julian Vance",
+    role: "Clinical Director",
+    specialty: "Doctor of Optometry (OD)",
+    bio: "Expert in dry eye management and ocular pathology diagnostics, leading Cambridge's clinical protocols and training.",
+    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800"
   },
   {
-    name: "Dr. Marcus Vance, OD",
-    role: "Ocular Surface & Dry Eye Director",
-    specialty: "Scleral Lens Fitting & IPL Therapy",
-    bio: "Dedicated to treating chronic dry eye syndrome, ocular allergies, and fitting specialized contact lenses for keratoconus.",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800"
+    name: "Dr. Sarah Mwangi",
+    role: "Senior Clinician",
+    specialty: "BSc Optom",
+    bio: "Specialist in refractive errors and binocular vision assessments, with a focus on precision wavefront lens prescription.",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
   }
 ]
 
 const SpecialistTeam = () => {
   return (
     <SectionWrapper bg="bg-[#FBF9F8]">
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-        <div className="space-y-3 max-w-2xl">
-          <h5 className="uppercase text-[#006A6A] font-plus-jakarta-sans font-bold text-xs tracking-[1.4px]">
-            Clinical Excellence Team
-          </h5>
-          <h2 className="dark-blue-text font-plus-jakarta-sans font-bold text-3xl sm:text-4xl capitalize">
-            Meet Our Doctors & Specialists
-          </h2>
-          <p className="text-[#44474E] text-base">
-            Our multidisciplinary team combines advanced medical doctorates with luxury optical styling expertise.
-          </p>
-        </div>
-
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#031635] text-white font-medium text-xs">
-          <Award className="size-4 text-[#90EFEF]" />
-          <span>Fellows of the American Academy of Optometry</span>
-        </div>
+      <div className="text-center mb-16 space-y-3">
+        <h2 className="font-plus-jakarta-sans text-3xl sm:text-4xl font-bold text-[#031635] tracking-tight">
+          Meet the Experts
+        </h2>
+        <p className="text-[#44474E] max-w-xl mx-auto text-base">
+          Our clinical team brings decades of combined experience from leading global institutions.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

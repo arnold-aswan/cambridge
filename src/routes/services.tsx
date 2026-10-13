@@ -1,10 +1,10 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { useState } from 'react'
 import ServicesHero from '@/components/services/ServicesHero'
-import ServicesList from '@/components/services/ServicesList'
-import PatientJourney from '@/components/services/PatientJourney'
+import ComprehensiveExams from '@/components/services/ComprehensiveExams'
+import SpecializedClinics from '@/components/services/SpecializedClinics'
 import TechSuite from '@/components/services/TechSuite'
-import ServicesFAQ from '@/components/services/ServicesFAQ'
+import EyewearBoutique from '@/components/services/EyewearBoutique'
+import PrivilegedOpportunities from '@/components/services/PrivilegedOpportunities'
 import BookingCTA from '@/components/shared/BookingCTA'
 
 export const Route = createFileRoute('/services')({
@@ -12,18 +12,14 @@ export const Route = createFileRoute('/services')({
 })
 
 function ServicesPage() {
-  const [activeCategory, setActiveCategory] = useState<string>('all')
-
   return (
     <main className="min-h-screen">
-      <ServicesHero
-        activeCategory={activeCategory}
-        onSelectCategory={setActiveCategory}
-      />
-      <ServicesList activeCategory={activeCategory} />
-      <PatientJourney />
+      <ServicesHero />
+      <ComprehensiveExams />
+      <SpecializedClinics />
       <TechSuite />
-      <ServicesFAQ />
+      <EyewearBoutique />
+      <PrivilegedOpportunities />
       <BookingCTA />
     </main>
   )
